@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+
+{
+
+    int num;
+    printf("Enter a number:");
+    scanf("%d",&num);
+    int range=(num>=1 && num<=100);
+
+    switch(range)
+    {
+        case 1 :
+        switch(num%2)
+        {
+            case 0 : printf("%d is even\n",num);
+                    break;
+            case 1 : printf("%d is odd\n",num);
+                    break;
+        }
+        break;
+        case 0: printf("%d out of range\n",num);
+               break;
+    }
+        return(0);
+}
